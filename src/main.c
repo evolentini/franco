@@ -118,8 +118,31 @@
 /* === Private function implementation ========================================================= */
 
 /* === Public function implementation ========================================================= */
+#include "unt.h"
+
+void SysTick_Handler(void) { 
+   static int divisor = 0;
+
+   divisor = (divisor + 1) % 10;
+   if (divisor == 0) {
+      refrescarDigitos();
+   } 
+}
 
 int main(void) {
+   
+   /* Inicializaciones y configuraciones de dispositivos */
+
+   Init_PonchoUNT();
+   SisTick_Init();
+   
+   Test_PonchoUNT();
+
+   return 0;
+}
+
+
+int maindemoqueanda(void) {
 
     int divisor  = 0;
     bool current_state, last_state = false;
