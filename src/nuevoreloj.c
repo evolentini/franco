@@ -1045,7 +1045,7 @@ void mod_hora(int incto)
 }
 
 
-void configurarInterrupcion(void) {
+void configurarInterrupcionInactiva(void) {
   /* Deshabilita interrupciones */
     __asm__ volatile ("cpsid i");
 
@@ -1093,7 +1093,7 @@ int mainviejo(void)
  * @brief Funcion periodica que se ejecuta con el SysTick
  * 
  */
-void SysTick_Handler(void) {
+void SysTick_Handler_Inactiva(void) {
    static int contador = 0,segmento_activo=0,k=0, retardo_lect_pulsador=0;
 
    //control si se presiona un pulsador
