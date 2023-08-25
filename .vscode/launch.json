@@ -9,7 +9,7 @@
             "request": "launch",
             "servertype": "openocd",
             "cwd": "${workspaceRoot}",
-            "executable": "./build/bin/project.elf",
+            "executable": "./build/bin/franco.elf",
             "name": "Debug (OpenOCD)",
             "configFiles": [
                 "${workspaceRoot}/muju/external/base/mcu/lpc4337-m4/openocd/openocd.cfg"

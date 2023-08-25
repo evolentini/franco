@@ -63,7 +63,7 @@ extern "C" {
 
 /* === Declaraciones de funciones externas ===================================================== */
 
-void SisTick_Init(void);
+//void SisTick_Init(void);
 
 /* === Ciere de documentacion ================================================================== */
 #ifdef __cplusplus

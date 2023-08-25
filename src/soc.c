@@ -63,19 +63,19 @@
 /* === Definiciones de funciones internas ====================================================== */
 
 /* === Definiciones de funciones externas ====================================================== */
-void SisTick_Init(void) {
+/*void SisTick_Init(void) {
    __asm volatile ("cpsid i");
-
+*/
    /* Activate SysTick */
-   SystemCoreClockUpdate();
+/*   SystemCoreClockUpdate();
    SysTick_Config(SystemCoreClock/10000);
-
+*/
    /* Update priority set by SysTick_Config */
-   NVIC_SetPriority(SysTick_IRQn, (1 <<__NVIC_PRIO_BITS) - 1);
+/*   NVIC_SetPriority(SysTick_IRQn, (1 <<__NVIC_PRIO_BITS) - 1);
 
    __asm volatile ("cpsie i");        
 }
-
+*/
 /* === Ciere de documentacion ================================================================== */
 
 /** @} Final de la definición del modulo para doxygen */
